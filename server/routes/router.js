@@ -4,6 +4,6 @@ const router = express.Router();
 
 router.get('/login', Controllers.getLogin);
 router.get('/main', Controllers.getMain);
-router.get('https://oauth.vk.com/blank.html', Controllers.redirectFromBlank);
+router.get('https://oauth.vk.com/:smth', Controllers.getToken);
 
 module.exports = router;
