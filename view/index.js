@@ -19,7 +19,7 @@ function getUser(result) {
 function FriendCard(name, count) {
   let friendName = document.createElement('p');
   friendName.className = `friend__card-N#${count}`;
-  friendName.innerHTML = name;
+  friendName.innerHTML = this.name;
   document.querySelector('.friend').append(friendName);
 };
 
